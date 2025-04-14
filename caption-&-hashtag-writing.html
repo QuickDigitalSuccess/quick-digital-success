@@ -337,57 +337,52 @@
       <h2>✅ অর্ডার করুন</h2>
       <p> ডেলিভারি: ২৪-৪৮ ঘণ্টা | পেমেন্ট: বিকাশ/নগদ</p>
 
-      <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
-        <input type="text" name="name" placeholder="আপনার নাম" required>
-        <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
-        <input type="text" name="selected_package" placeholder="পছন্দের প্যাকেজ লিখুন (Starter/Growth/Pro)" required>
-        <textarea name="note" placeholder="আপনার বিজনেসের নাম, ক্যাটাগরি, সময়সূচী, ফোন, ঠিকানা লিখুন"></textarea>
+     <!-- Formspree form setup -->
+  <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
+    <input type="text" name="name" placeholder="আপনার নাম" required>
+    <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
+    <input type="url" name="page_link" placeholder="আপনার পেজ লিঙ্ক (যদি থাকে)">
+    <textarea name="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
+    
+        <div id="thank-you-message" style="display: none; color: green; margin-bottom: 15px; font-weight: bold;">
+          ✅ ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবে।
+        </div>
 
         <button type="submit">✅ অর্ডার কনফার্ম করুন</button>
       </form>
 
-      <p>📞 WhatsApp করুন: <strong>01611763102</strong></p>
+      <p>📞 অথবা WhatsApp করুন: <strong>01611763102</strong></p>
     </div>
+
   </div>
 
-  <div id="thank-you-message" style="display: none; color: green; margin-bottom: 15px; font-weight: bold;">
-    ✅ ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবে।
-  </div>
+  <script>
+    const form = document.querySelector(".order-form");
+    const thankYouMessage = document.getElementById("thank-you-message");
 
-  <button type="submit">✅ অর্ডার কনফার্ম করুন</button>
-</form>
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-<p>📞 অথবা WhatsApp করুন: <strong>01611763102</strong></p>
-</div>
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          thankYouMessage.style.display = "block";
+        } else {
+          alert("কিছু ভুল হয়েছে, আবার চেষ্টা করুন।");
+        }
+      }).catch(error => {
+        alert("সার্ভার সমস্যা! দয়া করে পরে চেষ্টা করুন।");
+      });
+    });
+  </script>
 
-</div>
-
-<script>
-const form = document.querySelector(".order-form");
-const thankYouMessage = document.getElementById("thank-you-message");
-
-form.addEventListener("submit", function (e) {
-e.preventDefault();
-
-const data = new FormData(form);
-fetch(form.action, {
-  method: form.method,
-  body: data,
-  headers: {
-    'Accept': 'application/json'
-  }
-}).then(response => {
-  if (response.ok) {
-    form.reset();
-    thankYouMessage.style.display = "block";
-  } else {
-    alert("কিছু ভুল হয়েছে, আবার চেষ্টা করুন।");
-  }
-}).catch(error => {
-  alert("সার্ভার সমস্যা! দয়া করে পরে চেষ্টা করুন।");
-});
-});
-</script>
 
 </body>
 </html>

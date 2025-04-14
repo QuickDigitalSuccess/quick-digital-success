@@ -335,12 +335,13 @@
       <h2>✅ অর্ডার করুন</h2>
       <p>মূল্য: ৩৯৯ টাকা | ডেলিভারি: ২৪ ঘণ্টা | পেমেন্ট: বিকাশ/নগদ</p>
 
-      <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
-        <input type="text" name="name" placeholder="আপনার নাম" required>
-        <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
-        <input type="url" name="page_link" placeholder="আপনার পেজ লিঙ্ক (যদি থাকে)">
-        <textarea name="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
-
+      <!-- Formspree form setup -->
+  <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
+    <input type="text" name="name" placeholder="আপনার নাম" required>
+    <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
+    <input type="url" name="page_link" placeholder="আপনার পেজ লিঙ্ক (যদি থাকে)">
+    <textarea name="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
+    
         <div id="thank-you-message" style="display: none; color: green; margin-bottom: 15px; font-weight: bold;">
           ✅ ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবে।
         </div>
