@@ -1,11 +1,65 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Digital Success</title>
+    <style>
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            z-index: 999;
+            min-width: 220px;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+    
+        .dropdown-content a {
+            display: block;
+            padding: 12px 18px;
+            color: #333;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
+        }
+    
+        .dropdown-content a:hover {
+            background-color: #00BCD4;
+            color: #fff;
+            padding-left: 25px;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
     <style>
         /* Styling for the navigation bar */
         .navbar {
@@ -14,7 +68,7 @@
             align-items: center;
             padding: 10px 20px;
             background-color: #fff;
-            border-bottom: 4px solid #00BCD4; /* Blue border */
+            border-bottom: 4px solid #00BCD4;
             font-family: 'Segoe UI', sans-serif;
         }
 
@@ -27,11 +81,7 @@
             transition: all 0.3s ease;
         }
 
-        .navbar a:hover {
-            background-color: #00BCD4;
-            color: white;
-        }
-
+        .navbar a:hover,
         .navbar a.active {
             background-color: #00BCD4;
             color: white;
@@ -42,6 +92,45 @@
             font-weight: bold;
             color: #00BCD4;
         }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            position: relative;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #ccc;
+            z-index: 999;
+            min-width: 180px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #00BCD4;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -51,13 +140,24 @@
             Quick Digital Success
         </div>
         <div class="nav-links">
-            <a href= "index.html" class="active" >Home</a>
-            <a href="service-details.html">Services</a>
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <a href="service-details.html" class="active" >Services</a>
+                <div class="dropdown-content">
+                    <a href="facebook-page-setup.html">Facebook Page Setup</a>
+                    <a href="instagram-growth.html">Instagram Growth</a>
+                    <a href="basic-content-creation.html">Basic Content Creation</a>
+                    <a href="facebook-ad-setup-bosting.html">Facebook Boosting</a>
+                    <a href="gmb-setup-service.html">Google My Business</a>
+                    <a href="caption-&-hashtag-writing.html">Caption & Hashtag Writing</a>
+                </div>
+            </div>
+
             <a href="about.html">About</a>
-            <a href="contract.html">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
-
 
     <script>
         // JavaScript to highlight active link
@@ -69,100 +169,194 @@
             });
         });
     </script>
+</body>
+</html>
 
 
 
-<div style="background-color: #00bcd4; text-align: center; padding: 50px 0;">
-    <h1 style="font-size: 3rem; color: white; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Welcome to Quick Digital Success</h1>
-    <p style="font-size: 1.5rem; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); margin-top: 10px;">Empowering your business with professional digital marketing solutions</p>
-    <a href="#services" style="background-color: white; color: #00bcd4; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin-top: 20px; display: inline-block; transition: background-color 0.3s;">
-      Explore Our Services
-    </a>
-  </div>
-  <!-- Services Section -->
 
-<section id="services" style="background-color: #f9f9f9; padding: 0px 20px;">
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Digital Success</title>
+    <style>
+        /* General Header Styling */
+        .header {
+            background-color: #00BCD4; /* Blue color */
+            color: white;
+            text-align: center;
+            padding: 60px 20px; /* Increased padding for impact */
+            font-family: 'Segoe UI', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem; /* Large font size for the heading */
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            background-color: #ff6700;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .header a:hover {
+            background-color: #ff6600;
+        }
+
+        /* Adding a simple underline effect when hovering */
+        .header a:active {
+            background-color: #ff3300;
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+    <!-- General Header for Home, Services, About, Contact -->
+    <header class="header">
+        <h1>Quick Digital Success</h1>
+        <p>Your trusted partner for digital success. Take your business to the next level with our tailored services!</p>
+        <a href="#services" style="background-color: #ff6700; color: #ffffff; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin-top: 20px; display: inline-block; transition: background-color 0.3s;">
+            মনে রাখবেন অ্যাকশন ছারা সম্ভব না। <br>এখনি শুরু করুন !
+          </a>
+       
+        </a> <!-- Button linking to Services section -->
+    </header>
+
+
+    
+
+
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Services Section -->
+<section id="services" style="background-color: #f9f9f9; padding: 0px 20px; font-family: 'Poppins', sans-serif;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;"> সার্ভিস সমূহ</h2>
-        <div class="services">
-            <div class="service-box" style="background-color: #007bff; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ফেসবুক পেজ সেটআপ</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা আপনার ফেসবুক পেজকে প্রফেশনালভাবে সেটআপ করব, যাতে এটি আপনার ব্র্যান্ডের জন্য সঠিকভাবে কাজ করতে পারে।</p>
-                <ul style="font-size: 1rem; line-height: 1.6;">
-                    <li>ব্র্যান্ড নাম অনুযায়ী পেজ তৈরি</li>
-                    <li>প্রোফেশনাল প্রোফাইল ও কভার ফটো সেটআপ</li>
-                    <li>Call-to-Action (CTA) বাটন যুক্ত করা</li>
-                </ul>
-                <a href="facebook-page-setup.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
+        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;">আমাদের সার্ভিস ছয়টি</h2>
+        <div class="services" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+
+            <!-- Service 1 -->
+            <div class="service-box" style="background-color: #007bff; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ফেসবুক পেজ সেটআপ</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা আপনার ফেসবুক পেজকে প্রফেশনালভাবে সেটআপ করব, যাতে এটি আপনার ব্র্যান্ডের জন্য সঠিকভাবে কাজ করতে পারে।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>ব্র্যান্ড নাম অনুযায়ী পেজ তৈরি</li>
+                        <li>প্রোফেশনাল প্রোফাইল ও কভার ফটো সেটআপ</li>
+                        <li>Call-to-Action (CTA) বাটন যুক্ত করা</li>
+                    </ul>
+                </div>
+                <a href="facebook-page-setup.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
             </div>
 
-            <div class="service-box" style="background-color: #00bcd4; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">কনটেন্ট ক্রিয়েশন</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা ক্যানভা দিয়ে আকর্ষণীয় কনটেন্ট তৈরি করে আপনার ব্র্যান্ডের জন্য সঠিক কনটেন্ট স্ট্রাটেজি প্রদান করি।</p>
-                <ul style="font-size: 1rem; line-height: 1.6;">
-                    <li>প্রফেশনাল গ্রাফিক্স ডিজাইন</li>
-                    <li>ব্র্যান্ডের লক্ষ্য অনুযায়ী কনটেন্ট পরিকল্পনা</li>
-                    <li>বিভিন্ন সোসাল মিডিয়া প্ল্যাটফর্মে কনটেন্ট শেয়ারিং</li>
-                </ul>
-                <a href="basic-content-creation.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
+            <!-- Service 2 -->
+            <div class="service-box" style="background-color: #00bcd4; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">কনটেন্ট ক্রিয়েশন</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা ক্যানভা দিয়ে আকর্ষণীয় কনটেন্ট তৈরি করে আপনার ব্র্যান্ডের জন্য সঠিক কনটেন্ট স্ট্রাটেজি প্রদান করি।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>প্রফেশনাল গ্রাফিক্স ডিজাইন</li>
+                        <li>ব্র্যান্ডের লক্ষ্য অনুযায়ী কনটেন্ট পরিকল্পনা</li>
+                        <li>বিভিন্ন সোসাল মিডিয়া প্ল্যাটফর্মে কনটেন্ট শেয়ারিং</li>
+                    </ul>
+                </div>
+                <a href="basic-content-creation.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
             </div>
 
-            <div class="service-box" style="background-color: #ff9800; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">গুগল মাই বিজনেস সেটআপ</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">গুগল মাই বিজনেসে আপনার বিজনেস তালিকাভুক্ত করে, সম্ভাব্য কাস্টমারের কাছে পৌঁছান।</p>
-                <ul style="font-size: 1rem; line-height: 1.6;">
-                    <li>Google My Business পেজ তৈরি</li>
-                    <li>ব্যবসার অবস্থান, কর্মঘণ্টা, এবং অন্যান্য তথ্য পূর্ণ সেটআপ</li>
-                    <li>গুগল সার্চ ও ম্যাপে প্রদর্শন নিশ্চিতকরণ</li>
-                </ul>
-                <a href="gmb-setup-service.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
+            <!-- Service 3 -->
+            <div class="service-box" style="background-color: #ff9800; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">গুগল মাই বিজনেস সেটআপ</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">গুগল মাই বিজনেসে আপনার বিজনেস তালিকাভুক্ত করে, সম্ভাব্য কাস্টমারের কাছে পৌঁছান।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>Google My Business পেজ তৈরি</li>
+                        <li>ব্যবসার অবস্থান, কর্মঘণ্টা, এবং অন্যান্য তথ্য পূর্ণ সেটআপ</li>
+                        <li>গুগল সার্চ ও ম্যাপে প্রদর্শন নিশ্চিতকরণ</li>
+                    </ul>
+                </div>
+                <a href="gmb-setup-service.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
             </div>
+
+            <!-- Service 4 -->
+            <div class="service-box" style="background-color: #c41b70; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ইন্সটাগ্রাম গ্রোথ</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা আপনার ইনস্টাগ্রাম পেজের গ্রোথ কৌশল তৈরি করে, যাতে আপনার ব্র্যান্ডকে আরও ব্যাপকভাবে প্রসারিত করা যায়।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>ইন্সটাগ্রাম পেজ অপটিমাইজেশন</li>
+                        <li>গ্রোথ স্ট্রাটেজি এবং কনটেন্ট শেডিউলিং</li>
+                        <li>ফলোয়ার বৃদ্ধির কৌশল</li>
+                    </ul>
+                </div>
+                <a href="instagram-growth.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-box" style="background-color: #009688; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ফেসবুক অ্যাডস ক্যাম্পেইন</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা আপনার ব্যবসায়ের জন্য ফেসবুক অ্যাড ক্যাম্পেইন ডিজাইন করি, যা আপনার টার্গেট অডিয়েন্সকে সঠিকভাবে টার্গেট করে।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>কাস্টম টার্গেটিং</li>
+                        <li>কনভার্শন ট্র্যাকিং</li>
+                        <li>অ্যাড ক্রিয়েটিং এবং অপটিমাইজেশন</li>
+                    </ul>
+                </div>
+                <a href="facebook-ad-setup-bosting.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-box" style="background-color: #8bc34a; color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; justify-content: space-between; min-height: 520px;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ক্যাপশন ও হ্যাশট্যাগ রাইটিং</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">আপনার ব্র্যান্ড বা ব্যবসার জন্য শক্তিশালী ও আকর্ষণীয় ক্যাপশন এবং প্রাসঙ্গিক হ্যাশট্যাগ তৈরি করতে আমরা আছি।</p>
+                    <ul style="font-size: 1rem; line-height: 1.6;">
+                        <li>ক্রিয়েটিভ ক্যাপশন</li>
+                        <li>প্রাসঙ্গিক হ্যাশট্যাগ</li>
+                        <li>এনগেজমেন্ট বৃদ্ধি</li>
+                    </ul>
+                </div>
+                <a href="caption-&-hashtag-writing.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; text-align: center;">বিস্তারিত</a>
+            </div>
+
         </div>
     </div>
 </section>
-<!-- Block Section -->
-<div class="button-container">
-    <a href="service-details.html" class="service-button">আরো সেবা গুলো দেখুন</a>
-</div>
 
-<style>
-    .button-container {
-        text-align: center; /* Centering the button */
-        margin-top: 10px; margin-bottom: 10px;
-    }
-
-    .service-button {
-        display: inline-block;
-        background-color: #ff6700;
-        color: white;
-        padding: 12px 30px;
-        font-size: 1rem;
-        text-decoration: none;
-        border-radius: 30px;
-        transition: background-color 0.3s ease;
-    }
-
-    .service-button:hover {
-        background-color: #ff4500;
-    }
-</style>
-
-
-
-
-
-
+<br>
 
 <div id="footer-container"></div>
 <script>
-  fetch("footer.html")
+  fetch("/footer.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer-container").innerHTML = data;
     });
 </script>
-
-
 
 </body>
 </html>
