@@ -162,3 +162,16 @@ body {
  
 
 
+/* 🔧 মোবাইল/ট্যাবের জন্য ড্রপডাউন ক্লিক করলে খুলবে */
+.has-dropdown > a::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+.has-dropdown .dropdown {
+  display: none;
+}
+
+.has-dropdown.active .dropdown {
+  display: block;
+}

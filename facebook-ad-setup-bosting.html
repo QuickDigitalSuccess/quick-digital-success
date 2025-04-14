@@ -1,178 +1,3 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quick Digital Success</title>
-    <style>
-        /* Dropdown Styles */
-        .dropdown {
-            position: relative;
-        }
-    
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            border: 1px solid #e0e0e0;
-            z-index: 999;
-            min-width: 220px;
-            overflow: hidden;
-            animation: fadeIn 0.3s ease-in-out;
-        }
-    
-        .dropdown-content a {
-            display: block;
-            padding: 12px 18px;
-            color: #333;
-            font-size: 16px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, padding-left 0.3s ease;
-        }
-    
-        .dropdown-content a:hover {
-            background-color: #00BCD4;
-            color: #fff;
-            padding-left: 25px;
-        }
-    
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    
-    <style>
-        /* Styling for the navigation bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #fff;
-            border-bottom: 4px solid #00BCD4;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            padding: 12px 20px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .navbar a:hover,
-        .navbar a.active {
-            background-color: #00BCD4;
-            color: white;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00BCD4;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 10px;
-            position: relative;
-        }
-
-        /* Dropdown Styles */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 45px;
-            left: 0;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border: 1px solid #ccc;
-            z-index: 999;
-            min-width: 180px;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 10px 20px;
-            color: #333;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #00BCD4;
-            color: white;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            Quick Digital Success
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-
-            <div class="dropdown">
-                <a href="service-details.html" >Services</a>
-                <div class="dropdown-content">
-                    <a href="facebook-page-setup.html">Facebook Page Setup</a>
-                    <a href="instagram-growth.html">Instagram Growth</a>
-                    <a href="basic-content-creation.html">Basic Content Creation</a>
-                    <a href="facebook-ad-setup-bosting.html" class="active">Facebook Boosting</a>
-                    <a href="gmb-setup-service.html">Google My Business</a>
-                    <a href="caption-&-hashtag-writing.html">Caption & Hashtag Writing</a>     
-                </div>
-            </div>
-
-            <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-    <script>
-        // JavaScript to highlight active link
-        const links = document.querySelectorAll('.navbar a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                links.forEach(item => item.classList.remove('active'));
-                link.classList.add('active');
-            });
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -180,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook Ad Setup - Quick Digital Success</title>
   <style>
-   html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -276,11 +101,7 @@
   </style>
 </head>
 <body>
-
-  
-
   <div class="container">
-
     <!-- Hero Section -->
     <div class="hero">
       <h1>ফেসবুক অ্যাডস ক্যাম্পেইন</h1>
@@ -315,7 +136,7 @@
     <!-- Why Choose Us -->
     <div class="section">
       <h2>কেন আমাদের বেছে নেবেন?</h2>
-      <div class="why-choose">
+      <div class="trust">
         <div>💡 অভিজ্ঞতা সম্পন্ন এক্সপার্ট</div>
         <div>🔍 Audience Based Strategy</div>
         <div>📈 Real-Time Result Focus</div>
@@ -336,12 +157,12 @@
       <p>মূল্য: ৩৯৯ টাকা | ডেলিভারি: ২৪ ঘণ্টা | পেমেন্ট: বিকাশ/নগদ</p>
 
       <!-- Formspree form setup -->
-  <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
-    <input type="text" name="name" placeholder="আপনার নাম" required>
-    <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
-    <input type="url" name="page_link" placeholder="আপনার পেজ লিঙ্ক (যদি থাকে)">
-    <textarea name="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
-    
+      <form action="https://formspree.io/f/mqapnvnz" method="POST" class="order-form">
+        <input type="text" name="name" placeholder="আপনার নাম" required>
+        <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
+        <input type="url" name="page_link" placeholder="আপনার পেজ লিঙ্ক (যদি থাকে)">
+        <textarea name="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
+        
         <div id="thank-you-message" style="display: none; color: green; margin-bottom: 15px; font-weight: bold;">
           ✅ ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবে।
         </div>
@@ -351,8 +172,9 @@
 
       <p>📞 অথবা WhatsApp করুন: <strong>01611763102</strong></p>
     </div>
-
   </div>
+
+  <div id="footer-container"></div>
 
   <script>
     const form = document.querySelector(".order-form");
@@ -379,7 +201,16 @@
         alert("সার্ভার সমস্যা! দয়া করে পরে চেষ্টা করুন।");
       });
     });
-  </script>
 
+    fetch("footer.html")
+      .then(res => {
+        if (!res.ok) throw new Error("Footer লোড করতে ব্যর্থ হয়েছে");
+        return res.text();
+      })
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      })
+      .catch(err => console.error(err));
+  </script>
 </body>
 </html>
