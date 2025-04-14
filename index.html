@@ -86,7 +86,7 @@
 
 <section id="services" style="background-color: #f9f9f9; padding: 0px 20px;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;">আমাদের সার্ভিস ছয়টি</h2>
+        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;"> সার্ভিস সমূহ</h2>
         <div class="services">
             <div class="service-box" style="background-color: #007bff; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
                 <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ফেসবুক পেজ সেটআপ</h3>
@@ -107,7 +107,7 @@
                     <li>ব্র্যান্ডের লক্ষ্য অনুযায়ী কনটেন্ট পরিকল্পনা</li>
                     <li>বিভিন্ন সোসাল মিডিয়া প্ল্যাটফর্মে কনটেন্ট শেয়ারিং</li>
                 </ul>
-                <a href="https://wa.me/8801611763102" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">অর্ডার করুন</a>
+                <a href="basic-content-creation.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
             </div>
 
             <div class="service-box" style="background-color: #ff9800; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
@@ -118,7 +118,7 @@
                     <li>ব্যবসার অবস্থান, কর্মঘণ্টা, এবং অন্যান্য তথ্য পূর্ণ সেটআপ</li>
                     <li>গুগল সার্চ ও ম্যাপে প্রদর্শন নিশ্চিতকরণ</li>
                 </ul>
-                <a href="https://wa.me/8801611763102" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">অর্ডার করুন</a>
+                <a href="gmb-setup-service.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
             </div>
         </div>
     </div>
@@ -151,31 +151,19 @@
 </style>
 
 
-<!-- Footer Section -->
-<footer style="background-color: #333; color: white; padding: 40px 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <!-- Footer Content -->
-        <p style="font-size: 1.2rem; margin-bottom: 20px;">© 2025 Quick Digital Success. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">
-            <!-- Social Media Links -->
-            <a href="https://facebook.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://instagram.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://linkedin.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        </div>
-        <div style="font-size: 1rem;">
-            <!-- Contact Info -->
-            <p style="margin-bottom: 10px;">Contact us: <a href="tel:+8801611763102" style="color: white; text-decoration: none;">+8801611763102</a></p>
-            <p style="margin-bottom: 10px;">Email: <a href="mailto:info@quickdigitalsuccess.com" style="color: white; text-decoration: none;">info@quickdigitalsuccess.com</a></p>
-        </div>
-    </div>
-</footer>
 
-<!-- Font Awesome (for social icons) -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+<div id="footer-container"></div>
+<script>
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
+</script>
+
+
 
