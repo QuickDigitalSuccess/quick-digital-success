@@ -1,47 +1,181 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quick Digital Success</title>
-  <link rel="stylesheet" href="style.css" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Digital Success</title>
+    <style>
+        /* Styling for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 4px solid #00BCD4; /* Blue border */
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00BCD4;
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: #00BCD4;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00BCD4;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            Quick Digital Success
+        </div>
+        <div class="nav-links">
+            <a href= "index.html" class="active" >Home</a>
+            <a href="service-details.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contract.html">Contact</a>
+        </div>
+    </nav>
 
-  <header>
-    <h1>Welcome to Quick Digital Success</h1>
-    <p>Your trusted digital marketing partner.</p>
-  </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>✅ Facebook Page Setup</li>
-      <li>✅ Content Creation</li>
-      <li>✅ Instagram Optimization</li>
-      <li>✅ Google My Business Setup</li>
-    </ul>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We help businesses grow with smart and simple digital solutions.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>WhatsApp: <a href="https://wa.me/8801611763102" target="_blank">+8801611763102</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Quick Digital Success. All rights reserved.</p>
-  </footer>
-
+    <script>
+        // JavaScript to highlight active link
+        const links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                links.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+<div style="background-color: #00bcd4; text-align: center; padding: 50px 0;">
+    <h1 style="font-size: 3rem; color: white; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Welcome to Quick Digital Success</h1>
+    <p style="font-size: 1.5rem; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); margin-top: 10px;">Empowering your business with professional digital marketing solutions</p>
+    <a href="#services" style="background-color: white; color: #00bcd4; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin-top: 20px; display: inline-block; transition: background-color 0.3s;">
+      Explore Our Services
+    </a>
+  </div>
+  <!-- Services Section -->
+
+<section id="services" style="background-color: #f9f9f9; padding: 0px 20px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;">আমাদের সার্ভিস ছয়টি</h2>
+        <div class="services">
+            <div class="service-box" style="background-color: #007bff; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">ফেসবুক পেজ সেটআপ</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা আপনার ফেসবুক পেজকে প্রফেশনালভাবে সেটআপ করব, যাতে এটি আপনার ব্র্যান্ডের জন্য সঠিকভাবে কাজ করতে পারে।</p>
+                <ul style="font-size: 1rem; line-height: 1.6;">
+                    <li>ব্র্যান্ড নাম অনুযায়ী পেজ তৈরি</li>
+                    <li>প্রোফেশনাল প্রোফাইল ও কভার ফটো সেটআপ</li>
+                    <li>Call-to-Action (CTA) বাটন যুক্ত করা</li>
+                </ul>
+                <a href="facebook-page-setup.html" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">বিস্তারিক দেখুন</a>
+            </div>
+
+            <div class="service-box" style="background-color: #00bcd4; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">কনটেন্ট ক্রিয়েশন</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">আমরা ক্যানভা দিয়ে আকর্ষণীয় কনটেন্ট তৈরি করে আপনার ব্র্যান্ডের জন্য সঠিক কনটেন্ট স্ট্রাটেজি প্রদান করি।</p>
+                <ul style="font-size: 1rem; line-height: 1.6;">
+                    <li>প্রফেশনাল গ্রাফিক্স ডিজাইন</li>
+                    <li>ব্র্যান্ডের লক্ষ্য অনুযায়ী কনটেন্ট পরিকল্পনা</li>
+                    <li>বিভিন্ন সোসাল মিডিয়া প্ল্যাটফর্মে কনটেন্ট শেয়ারিং</li>
+                </ul>
+                <a href="https://wa.me/8801611763102" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">অর্ডার করুন</a>
+            </div>
+
+            <div class="service-box" style="background-color: #ff9800; color: white; padding: 30px; margin: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">গুগল মাই বিজনেস সেটআপ</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">গুগল মাই বিজনেসে আপনার বিজনেস তালিকাভুক্ত করে, সম্ভাব্য কাস্টমারের কাছে পৌঁছান।</p>
+                <ul style="font-size: 1rem; line-height: 1.6;">
+                    <li>Google My Business পেজ তৈরি</li>
+                    <li>ব্যবসার অবস্থান, কর্মঘণ্টা, এবং অন্যান্য তথ্য পূর্ণ সেটআপ</li>
+                    <li>গুগল সার্চ ও ম্যাপে প্রদর্শন নিশ্চিতকরণ</li>
+                </ul>
+                <a href="https://wa.me/8801611763102" style="display: inline-block; background-color: #ff6700; color: white; padding: 12px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px;">অর্ডার করুন</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Block Section -->
+<div class="button-container">
+    <a href="service-details.html" class="service-button">আরো সেবা গুলো দেখুন</a>
+</div>
+
+<style>
+    .button-container {
+        text-align: center; /* Centering the button */
+        margin-top: 10px; margin-bottom: 10px;
+    }
+
+    .service-button {
+        display: inline-block;
+        background-color: #ff6700;
+        color: white;
+        padding: 12px 30px;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    .service-button:hover {
+        background-color: #ff4500;
+    }
+</style>
+
+
+<!-- Footer Section -->
+<footer style="background-color: #333; color: white; padding: 40px 20px; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <!-- Footer Content -->
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">© 2025 Quick Digital Success. All rights reserved.</p>
+        <div style="margin-bottom: 20px;">
+            <!-- Social Media Links -->
+            <a href="https://facebook.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://instagram.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://linkedin.com" style="color: white; font-size: 1.5rem; margin-right: 20px; text-decoration: none;" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+        <div style="font-size: 1rem;">
+            <!-- Contact Info -->
+            <p style="margin-bottom: 10px;">Contact us: <a href="tel:+8801611763102" style="color: white; text-decoration: none;">+8801611763102</a></p>
+            <p style="margin-bottom: 10px;">Email: <a href="mailto:info@quickdigitalsuccess.com" style="color: white; text-decoration: none;">info@quickdigitalsuccess.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Font Awesome (for social icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
