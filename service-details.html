@@ -1,34 +1,29 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Digital Success</title>
     <style>
         /* Dropdown Styles */
         .dropdown {
             position: relative;
         }
-    
+
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 50px;
+            top: 100%;
             left: 0;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             border: 1px solid #e0e0e0;
             z-index: 999;
             min-width: 220px;
             overflow: hidden;
-            animation: fadeIn 0.3s ease-in-out;
         }
-    
+
         .dropdown-content a {
             display: block;
             padding: 12px 18px;
@@ -37,30 +32,17 @@
             text-decoration: none;
             transition: background-color 0.3s ease, padding-left 0.3s ease;
         }
-    
+
         .dropdown-content a:hover {
             background-color: #00BCD4;
             color: #fff;
             padding-left: 25px;
         }
-    
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
-    
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    
-    <style>
+
         /* Styling for the navigation bar */
         .navbar {
             display: flex;
@@ -99,106 +81,18 @@
             position: relative;
         }
 
-        /* Dropdown Styles */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 45px;
-            left: 0;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border: 1px solid #ccc;
-            z-index: 999;
-            min-width: 180px;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 10px 20px;
-            color: #333;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #00BCD4;
-            color: white;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            Quick Digital Success
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-
-            <div class="dropdown">
-                <a href="service-details.html" class="active" >Services</a>
-                <div class="dropdown-content">
-                    <a href="facebook-page-setup.html">Facebook Page Setup</a>
-                    <a href="instagram-growth.html">Instagram Growth</a>
-                    <a href="basic-content-creation.html">Basic Content Creation</a>
-                    <a href="facebook-ad-setup-bosting.html">Facebook Boosting</a>
-                    <a href="gmb-setup-service.html">Google My Business</a>
-                    <a href="caption-&-hashtag-writing.html">Caption & Hashtag Writing</a>
-                </div>
-            </div>
-
-            <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-    <script>
-        // JavaScript to highlight active link
-        const links = document.querySelectorAll('.navbar a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                links.forEach(item => item.classList.remove('active'));
-                link.classList.add('active');
-            });
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Digital Success</title>
-    <style>
         /* General Header Styling */
         .header {
-            background-color: #00BCD4; /* Blue color */
+            background-color: #00BCD4;
             color: white;
             text-align: center;
-            padding: 60px 20px; /* Increased padding for impact */
+            padding: 60px 20px;
             font-family: 'Segoe UI', sans-serif;
             margin-bottom: 20px;
         }
 
         .header h1 {
-            font-size: 3rem; /* Large font size for the heading */
+            font-size: 3rem;
             margin-bottom: 10px;
             font-weight: bold;
         }
@@ -223,31 +117,56 @@
             background-color: #ff6600;
         }
 
-        /* Adding a simple underline effect when hovering */
         .header a:active {
             background-color: #ff3300;
         }
     </style>
-    
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            Quick Digital Success
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
 
-    <!-- General Header for Home, Services, About, Contact -->
+            <div class="dropdown">
+                <a href="service-details.html" class="active">Services</a>
+                <div class="dropdown-content">
+                    <a href="facebook-page-setup.html">Facebook Page Setup</a>
+                    <a href="instagram-growth.html">Instagram Growth</a>
+                    <a href="basic-content-creation.html">Basic Content Creation</a>
+                    <a href="facebook-ad-setup-bosting.html">Facebook Boosting</a>
+                    <a href="gmb-setup-service.html">Google My Business</a>
+                    <a href="caption-&-hashtag-writing.html">Caption & Hashtag Writing</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- General Header -->
     <header class="header">
         <h1>Quick Digital Success</h1>
         <p>Your trusted partner for digital success. Take your business to the next level with our tailored services!</p>
-        <a href="#services" style="background-color: #ff6700; color: #ffffff; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin-top: 20px; display: inline-block; transition: background-color 0.3s;">
-            মনে রাখবেন অ্যাকশন ছারা সম্ভব না। <br>এখনি শুরু করুন !
-          </a>
-       
-        </a> <!-- Button linking to Services section -->
+        <a href="#services">Explore Services</a>
     </header>
 
+    <!-- Services Section -->
+    <section id="services" style="background-color: #f9f9f9; padding: 0px 20px; font-family: 'Poppins', sans-serif;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;">Our Services</h2>
+            <div class="services" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Service Boxes -->
+                <!-- Add your service boxes here -->
+            </div>
+        </div>
+    </section>
 
-    
-
-
+ 
 
 
 <!-- Google Fonts -->
@@ -256,7 +175,7 @@
 <!-- Services Section -->
 <section id="services" style="background-color: #f9f9f9; padding: 0px 20px; font-family: 'Poppins', sans-serif;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 30px;">আমাদের সার্ভিস ছয়টি</h2>
+      
         <div class="services" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
 
             <!-- Service 1 -->
@@ -358,5 +277,14 @@
     });
 </script>
 
+<div id="footer-container"></div>
+<script>
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+        });
+</script>
 </body>
 </html>
+
