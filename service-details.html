@@ -262,23 +262,22 @@
 <br>
 
 <div id="footer-container"></div>
-
 <script>
-  fetch("./footer.html")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.text();
-    })
+  fetch("footer.html")
+    .then(res => res.text())
     .then(data => {
       document.getElementById("footer-container").innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Error loading footer:", error);
     });
 </script>
 
+<div id="footer-container"></div>
+<script>
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+        });
+</script>
 </body>
 </html>
 
